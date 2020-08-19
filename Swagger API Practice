@@ -1,0 +1,28 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Tweets API
+  description: Curate a collection of Tweets
+# Added by API Auto Mocking Plugin
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/brandonpylau/Tweets/1.0.0
+paths:
+  /collections/entries:
+    get:
+      tags:
+      - "Tweets"
+      summary: "Retrieve the identified Collection, presented as a list of the Tweets curated within."
+      description: ""
+      operationId: "getcollections/entries"
+      parameters: 
+      - name: id
+        in: path
+        description: The identifier of the Collection for which to return results.
+        required: required
+    post:
+      tags:
+      - "Tweets"
+      summary: "Retrieve the identified Collection, presented as a list of the Tweets curated within."
+      description: ""
+      operationId: "postcollections/entries"
